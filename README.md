@@ -71,7 +71,11 @@ if ($session) {
 	}
 } else {
 	$helper = new FacebookRedirectLoginHelper('https://apps.facebook.com/APP_NAMESPACE/'); // add your Facebook app namespace here
+	
+	// getting the login url for your app
 	$auth_url = $helper->getLoginUrl(array('email')); // add new permission here as an index type array
+	
+	// redirecting the user directly to your Facebook canvas app you can also make a link of it
 	echo "<script>window.top.location.href='".$auth_url."'</script>";
 }
 ```
