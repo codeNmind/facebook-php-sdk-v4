@@ -1,7 +1,7 @@
 Facebook PHP SDK v4 Examples
 ============================
 
-Here in this repository I am going to upload all the PHP files related to latest Facebook PHP SDK v4 which will be related to the video series on codenmind.com website.
+My name is Sohaib Ilyas better known as <a href="http://sohaibilyas.com/twitter"><b>Roomi</b></a> and here in this repository I am going to upload all the PHP files related to latest Facebook PHP SDK v4 which will be related to the video series on codenmind.com website.
 
 Usage
 -----
@@ -80,6 +80,7 @@ if ($session) {
 }
 ```
 
-Visit Us
---------
-http://codenmind.com
+Still Need Help!
+----------------
+If you still need some help and you are confused with the read me file then you can watch the video tutorials at
+http://codenmind.com/facebook-sdk-v4-php-tutorials/ and after watching videos please must give feedback on the website.
