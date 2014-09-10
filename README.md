@@ -5,9 +5,9 @@ Here in this repository I am going to upload all the PHP files related to latest
 
 Usage
 -----
-All you need to do is to download the whole ./src/Facebook from https://github.com/facebook/facebook-php-sdk-v4 and then upload the downloaded <b>Facebook</b> folder to your hosting and then watch the video tutorials on http://codenmind.com/facebook-sdk-v4-php-tutorials/ to learn that how you can get your own Facebook Developer account and make it up and running after making Facebook Developer account and uploading the <b>Facebook</b> folder to your hosting all you need to do add different lines of code as you can see different examples here like getting basic info about user, posting on timeline etc etc just use different examples and make sure you have included all the classes the first in the start of the index.php file as you can see below:
+All you need to do is to download the whole ./src/Facebook from https://github.com/facebook/facebook-php-sdk-v4 and then upload the downloaded <b>Facebook</b> folder to your hosting and then watch the video tutorials on http://codenmind.com/facebook-sdk-v4-php-tutorials/ to learn that how you can get your own Facebook Developer account and make it up and running after making Facebook Developer account and uploading the <b>Facebook</b> folder to your hosting all you need to do add different lines of code as you can see different examples here like getting basic info about user, posting on timeline etc etc just use different examples and make sure you have included all the classes the first in the start of the index.php file, and the example below is for the canvas app which works on Facebook with apps.facebook.com/APP_NAMESPACE/ link.
 
-'''php
+```php
 <?php
 session_start();
 require_once( 'Facebook/HttpClients/FacebookHttpable.php' );
@@ -74,7 +74,7 @@ if ($session) {
 	$auth_url = $helper->getLoginUrl(array('email')); // add new permission here as an index type array
 	echo "<script>window.top.location.href='".$auth_url."'</script>";
 }
-'''
+```
 
 Visit Us
 --------
