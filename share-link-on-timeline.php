@@ -52,7 +52,7 @@ try {
 
 if ($session) {
 	try {
-    // sharing link on the user timeline
+    		// sharing link on the user timeline
 		$postRequest = new FacebookRequest($session, 'POST', '/me/feed', array('link' => 'http://codenmind.com', 'description' => 'new description', 'message' => 'This message must come from user end!!!'));
 		$postResponse = $postRequest->execute();
 		$posting = $postResponse->getGraphObject();
