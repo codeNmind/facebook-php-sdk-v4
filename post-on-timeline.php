@@ -52,7 +52,8 @@ try {
 
 if ($session) {
 	try {
-		$postRequest = new FacebookRequest($session, 'POST', '/me/feed', array('message' => 'http://codenmind.com'));
+		// posting on user timeline
+		$postRequest = new FacebookRequest($session, 'POST', '/me/feed', array('message' => 'This message must come from user end!!!'));
 		$postResponse = $postRequest->execute();
 		$posting = $postResponse->getGraphObject();
 		echo $posting->getProperty('id');
