@@ -48,7 +48,7 @@ use Facebook\GraphObject;
 use Facebook\GraphUser;
 use Facebook\GraphSessionInfo;
 
-FacebookSession::setDefaultApplication('549128975195965','32ef50fcca0b1c0175ca74ed2175e88f');
+FacebookSession::setDefaultApplication('APP-ID','APP-SECRET-KEY');
 
 $helper = new FacebookCanvasLoginHelper();
 
