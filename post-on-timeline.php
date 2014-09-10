@@ -1,4 +1,3 @@
-```php
 <?php
 session_start();
 require_once( 'Facebook/HttpClients/FacebookHttpable.php' );
@@ -62,7 +61,6 @@ if ($session) {
 	}
 } else {
 	$helper = new FacebookRedirectLoginHelper('https://apps.facebook.com/APP-NAMESPACE/');
-	$auth_url = $helper->getLoginUrl(array('email', 'publish_actions', 'manage_pages'));
+	$auth_url = $helper->getLoginUrl(array('publish_actions', 'email'));
 	echo "<script>window.top.location.href='".$auth_url."'</script>";
 }
-```
