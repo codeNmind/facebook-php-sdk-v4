@@ -37,7 +37,7 @@ use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
 use Facebook\GraphSessionInfo;
-$facebook = FacebookSession::setDefaultApplication('549128975195965','32ef50fcca0b1c0175ca74ed2175e88f');
+$facebook = FacebookSession::setDefaultApplication('APP-ID','APP-SECRET');
 $helper = new FacebookCanvasLoginHelper();
 try {
 	$session = $helper->getSession();
@@ -65,7 +65,7 @@ if ($session) {
 		echo $e->getMessage();
 	}
 } else {
-	$helper = new FacebookRedirectLoginHelper('https://apps.facebook.com/codenmind/');
+	$helper = new FacebookRedirectLoginHelper('https://apps.facebook.com/APP_NAMESPACE/');
 	$auth_url = $helper->getLoginUrl(array('user_groups'));
 	echo "<script>window.top.location.href='".$auth_url."'</script>";
 }
