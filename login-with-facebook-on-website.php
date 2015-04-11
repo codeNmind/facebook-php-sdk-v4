@@ -19,14 +19,13 @@ try {
 	if (isset($_SESSION['access_token'])) {
         // Check if an access token has already been set
         $session = new FacebookSession($_SESSION['access_token']);
-    } else {
+    }   else {
         // Get access token from the code parameter in the URL
         $session = $helper->getSessionFromRedirect();
-    }
-	
-	} catch (FacebookRequestException $ex) {
+    	}
+    } catch (FacebookRequestException $ex) {
 		echo $ex->getMessage();
-	} catch (\Exception $ex) {
+        } catch (\Exception $ex) {
 	echo $ex->getMessage();
 }
 
@@ -43,7 +42,7 @@ if (isset($session)) {
 		echo $e->getMessage();
 	}
 } else {
-	$helper = new FacebookRedirectLoginHelper('http://www.sohaibilyas.com/cyp/');
+	$helper = new FacebookRedirectLoginHelper('REDIRECT_URI');
 	$auth_url = $helper->getLoginUrl();
 	echo '<a href="'.$auth_url.'">Login with Facebook</a>';
 	//echo "<script>window.top.location.href='".$auth_url."'</script>";
